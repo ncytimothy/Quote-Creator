@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Quote Creator!-->
         <scene sceneID="nyL-3y-s7s">
             <objects>
                 <tableViewController id="rdQ-KO-Jg5" sceneMemberID="viewController">
@@ -31,7 +31,9 @@
                             <outlet property="delegate" destination="rdQ-KO-Jg5" id="z6r-Ct-sO6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="CsI-E1-rDd"/>
+                    <navigationItem key="navigationItem" title="Quote Creator!" id="CsI-E1-rDd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u6q-PM-ATR"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muN-je-kGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
