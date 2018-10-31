@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,6 +39,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muN-je-kGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="145"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3L4-wH-42w">
+            <objects>
+                <viewController id="hNv-oi-zeF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tdz-vl-7h3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your Favorite Quotes!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-jG-NjK">
+                                <rect key="frame" x="87" y="79" width="201" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Favorite Quote Here!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dNF-4T-ieE">
+                                <rect key="frame" x="16" y="126" width="337" height="301"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOk-yE-VD5">
+                                <rect key="frame" x="163" y="523" width="49" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-P3-GOV">
+                                <rect key="frame" x="173" y="435" width="29" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dNF-4T-ieE" firstAttribute="leading" secondItem="Tdz-vl-7h3" secondAttribute="leadingMargin" id="0Tr-2i-dNJ"/>
+                            <constraint firstItem="dNF-4T-ieE" firstAttribute="top" secondItem="e8Z-jG-NjK" secondAttribute="bottom" constant="26" id="AoU-wz-h7M"/>
+                            <constraint firstItem="CE4-P3-GOV" firstAttribute="leading" secondItem="4lm-xn-j1w" secondAttribute="leading" constant="173" id="Czx-zL-UP0"/>
+                            <constraint firstItem="OOk-yE-VD5" firstAttribute="centerX" secondItem="CE4-P3-GOV" secondAttribute="centerX" id="Rg1-dv-NDG"/>
+                            <constraint firstItem="4lm-xn-j1w" firstAttribute="bottom" secondItem="OOk-yE-VD5" secondAttribute="bottom" constant="114" id="V3s-be-Dvu"/>
+                            <constraint firstItem="e8Z-jG-NjK" firstAttribute="leading" secondItem="4lm-xn-j1w" secondAttribute="leading" constant="87" id="Xan-bq-GbP"/>
+                            <constraint firstItem="OOk-yE-VD5" firstAttribute="centerX" secondItem="Tdz-vl-7h3" secondAttribute="centerX" id="ZQZ-ck-M6W"/>
+                            <constraint firstItem="CE4-P3-GOV" firstAttribute="top" secondItem="dNF-4T-ieE" secondAttribute="bottom" constant="8" symbolic="YES" id="av0-0d-Z7x"/>
+                            <constraint firstItem="OOk-yE-VD5" firstAttribute="top" secondItem="CE4-P3-GOV" secondAttribute="bottom" constant="58" id="cNY-mT-acr"/>
+                            <constraint firstItem="CE4-P3-GOV" firstAttribute="centerX" secondItem="e8Z-jG-NjK" secondAttribute="centerX" id="fuM-cD-t8v"/>
+                            <constraint firstItem="4lm-xn-j1w" firstAttribute="trailing" secondItem="dNF-4T-ieE" secondAttribute="trailing" constant="22" id="iEs-Nt-DVV"/>
+                            <constraint firstItem="OOk-yE-VD5" firstAttribute="leading" secondItem="4lm-xn-j1w" secondAttribute="leading" constant="163" id="u2g-bq-ens"/>
+                            <constraint firstItem="e8Z-jG-NjK" firstAttribute="top" secondItem="4lm-xn-j1w" secondAttribute="top" constant="59" id="yqA-Ht-LeW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4lm-xn-j1w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpX-vb-XOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.8" y="144.3778110944528"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EDm-7a-nHY">
