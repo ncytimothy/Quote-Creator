@@ -34,14 +34,12 @@ class QuoteTableVC: UIViewController {
 //-----------------------------------------------------------
     // MARK: Actions
     @IBAction func addQuote(_ sender: Any) {
-        let addQuoteVC = storyboard?.instantiateViewController(withIdentifier: "AddQuoteVC") as! UIViewController
+      let addQuoteVC = storyboard?.instantiateViewController(withIdentifier: "AddQuoteVC") as! UIViewController
         navigationController?.pushViewController(addQuoteVC, animated: true)
         
     }
     
-    
-    
-    
+
 //-----------------------------------------------------------
     
     
@@ -63,5 +61,10 @@ extension QuoteTableVC: UITableViewDataSource {
 
 extension QuoteTableVC: UITableViewDelegate {
     
+  
+    
+    
 }
+
+
 
