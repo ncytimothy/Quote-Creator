@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="377" y="145"/>
         </scene>
-        <!--View Controller-->
+        <!--Add QuoteVC-->
         <scene sceneID="3L4-wH-42w">
             <objects>
-                <viewController storyboardIdentifier="AddQuoteVC" id="hNv-oi-zeF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddQuoteVC" id="hNv-oi-zeF" customClass="AddQuoteVC" customModule="Quote_Creator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tdz-vl-7h3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

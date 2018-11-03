@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4BD975A218DD136001FB401 /* AddQuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD9759218DD136001FB401 /* AddQuoteVC.swift */; };
 		C4D045152189D982006E293B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D045142189D982006E293B /* AppDelegate.swift */; };
 		C4D045172189D982006E293B /* QuoteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D045162189D982006E293B /* QuoteTableVC.swift */; };
 		C4D0451A2189D982006E293B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D045182189D982006E293B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4BD9759218DD136001FB401 /* AddQuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteVC.swift; sourceTree = "<group>"; };
 		C4D045112189D982006E293B /* Quote-Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quote-Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D045142189D982006E293B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4D045162189D982006E293B /* QuoteTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableVC.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C4D045142189D982006E293B /* AppDelegate.swift */,
 				C4D045162189D982006E293B /* QuoteTableVC.swift */,
+				C4BD9759218DD136001FB401 /* AddQuoteVC.swift */,
 				C4D045182189D982006E293B /* Main.storyboard */,
 				C4D0451B2189D984006E293B /* Assets.xcassets */,
 				C4D0451D2189D984006E293B /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D045172189D982006E293B /* QuoteTableVC.swift in Sources */,
+				C4BD975A218DD136001FB401 /* AddQuoteVC.swift in Sources */,
 				C4D045152189D982006E293B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

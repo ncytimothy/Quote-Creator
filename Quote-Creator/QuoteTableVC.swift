@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuoteTableVC: UIViewController {
+class QuoteTableVC: UITableViewController {
 //-----------------------------------------------------------
     // MARK: Properties
     var quotes = [String]()
@@ -19,6 +19,7 @@ class QuoteTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad called!")
+        
     }
 
     
@@ -45,26 +46,5 @@ class QuoteTableVC: UIViewController {
     
 
 }
-
-
-extension QuoteTableVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
-    
-    
-}
-
-extension QuoteTableVC: UITableViewDelegate {
-    
-  
-    
-    
-}
-
 
 
