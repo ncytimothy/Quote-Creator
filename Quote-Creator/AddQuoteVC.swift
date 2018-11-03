@@ -17,6 +17,19 @@ class AddQuoteVC: UIViewController {
         
     }
     
+    @IBAction func cancelPressed(_ sender: Any) {
+       self.navigationController?.popViewController(animated: true)
+    }
+    
+}
+
+
+extension AddQuoteVC: UITextViewDelegate {
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        textView.text = " "
+        return true
+    }
     
 }
 
