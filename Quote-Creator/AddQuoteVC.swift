@@ -71,7 +71,7 @@ class AddQuoteVC: UIViewController {
     }
 }
     
-    
+
 extension AddQuoteVC: UITextViewDelegate {
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -82,6 +82,15 @@ extension AddQuoteVC: UITextViewDelegate {
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
+        // Guard Staments: We guard based on a condition
+        // The condition will be the condition that we do not want the code to fall through
+        // after the guard statement
+        
+        // Here when the textView hasText, we do not want to configure the Text View's placeholder
+        
+        // More precisely, we are saying that if textView.hasText is false,
+        // i.e. the textView does not have text, we will fall through
+        // and add the placeholder back into the Text View
         guard textView.hasText else { return }
         
         configureTextViewPlaceholder()
