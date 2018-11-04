@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuoteTableVC: UITableViewController {
+class QuoteTableVC: UIViewController {
 //-----------------------------------------------------------
     // MARK: Properties
     var quotes = [String]()
@@ -20,9 +20,11 @@ class QuoteTableVC: UITableViewController {
         super.viewDidLoad()
         print("viewDidLoad called!")
         
+        // Inject the Singleton AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        quotes = appDelegate.quotes
+        
     }
-
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -43,8 +45,22 @@ class QuoteTableVC: UITableViewController {
 
 //-----------------------------------------------------------
     
-    
+}
 
+extension QuoteTableVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return quotes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "quoteCell") as! UITableViewCell
+        cell.textLabel?.text = quotes[indexPath.row]
+        return cell
+    }
+    
+    
+    
+    
 }
 
 

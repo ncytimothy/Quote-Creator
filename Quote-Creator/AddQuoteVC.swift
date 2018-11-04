@@ -18,6 +18,7 @@ class AddQuoteVC: UIViewController {
     // MARK: Properties
     @IBOutlet weak var textView: UITextView!
     
+    
 //--------------------------------------------------------------------------------------------------------------------
     // MARK: Lifecycle
  
@@ -27,9 +28,11 @@ class AddQuoteVC: UIViewController {
         textView.delegate = self
         
         self.navigationItem.title = "Add Quote"
+        
         configureTextView()
     
         configureTapGestureRecognizer()
+        
         
     }
     
@@ -54,6 +57,14 @@ class AddQuoteVC: UIViewController {
        self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func addPressed(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if let quote = self.textView.text {
+            print("Quote: \(quote)")
+            appDelegate.quotes.append(quote)
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
 //--------------------------------------------------------------------------------------------------------------------
     // MARK: Helpers
