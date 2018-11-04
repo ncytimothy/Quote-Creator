@@ -44,8 +44,6 @@ class AddQuoteVC: UIViewController {
     }
     
 
-    
-    
     @IBAction func cancelPressed(_ sender: Any) {
        self.navigationController?.popViewController(animated: true)
     }
@@ -70,8 +68,18 @@ class AddQuoteVC: UIViewController {
         textView.textColor = UIColor.gray
     }
 }
-    
 
+//--------------------------------------------------------------------------------------------------------------------
+    // MARK: Keyboard Methods
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------------------------------------
+    // MARK: UITextViewDelegate
 extension AddQuoteVC: UITextViewDelegate {
     
     func textViewDidBeginEditing(_ textView: UITextView) {
